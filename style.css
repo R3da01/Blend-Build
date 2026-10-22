@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.top {
+    background-color: #394b32;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px ;
+    border-bottom: 1px solid #ddd5c7;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #786d5d;
+    font-size: 14px;
+}
+
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 35px ;
+}
+
+
+
+ img {
+
+    border-radius: 10px;
+}
+
+
+.options {
+    flex: 1;
+}
+
+ .step {
+    font-size: 12px;
+    color: #394b32;
+    margin-bottom: 25px;
+} 
+span {
+    font-size: 15px;
+    color: #394b32;
+
+}
+
+.small {
+    font-size: 10px;
+    margin-bottom: 15px;
+}
+
+.options h2 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.options > p {
+    color: #786d5d;
+    font-size: 13px;
+}
+
+.options h3 {
+    font-size: 14px;
+    margin: 25px 0 12px;
+}
+
+.choices {
+    display: flex;
+    gap: 10px;
+}
+
+.choices label {
+    flex: 1;
+    border: 1px solid #ded3c2;
+    background-color: white;
+    padding: 15px 10px;
+    border-radius: 12px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.choices input {
+    accent-color: #394b32;
+    margin-right: 4px;
+}
+
+
+.note {
+    margin-top: 20px;
+    font-size: 11px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 30px 5%;
+}
+
+.bottom p {
+    color: #786d5d;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.bottom h2 {
+    font-size: 28px;
+    font-weight: normal;
+}
+
+button {
+    background-color: #394b32;
+    color: white;
+    border: none;
+    padding: 20px 45px;
+    border-radius: 12px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 5%;
+    font-size: 11px;
+    color: #786d5d;
+}
+
+/* Phone */
+@media (max-width: 600px) {
+    main > img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 1023px) {
+    main > img {
+        width: 45%;
+        height: auto;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    main > img {
+        width: 50%;
+        height: auto;
+    }
+}
+
+
+
+/* Hide menu button on desktop */
+#menu-btn {
+    display: none;
+}
+
+/* Phone */
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    #menu-btn {
+        display: block;
+        padding: 5px 10px;
+        font-size: 24px;
+        background: #394b32;
+    }
+
+    .nav_bar_02 {
+        position: absolute;
+        top: 100px;
+        right: 10px;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        box-shadow: 0 2px 8px #ccc;
+        z-index: 10;
+    }
+
+    .nav_bar_02.hidden {
+        display: none;
+    }
+
+    main {
+        padding: 20px 15px;
+        gap: 25px;
+    }
+
+    .options h2 {
+        font-size: 32px;
+    }
+
+    .choices {
+        flex-wrap: wrap;
+    }
+
+    .bottom {
+        padding: 20px 15px;
+        gap: 10px;
+    }
+
+    .bottom button {
+        padding: 15px;
+        font-size: 12px;
+    }
+
+    footer {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+}
