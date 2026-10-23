@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 
@@ -15,6 +16,7 @@
 }
 
 header {
+    background-color: #FAF7F0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,7 +42,9 @@ nav a {
 
 
 main {
+    background-color: #FAF7F0;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 40px;
     padding: 35px ;
@@ -49,7 +53,9 @@ main {
 
 
  img {
-
+    max-width: 90%;
+    height: auto;
+    
     border-radius: 10px;
 }
 
@@ -88,6 +94,13 @@ span {
     font-size: 14px;
     margin: 25px 0 12px;
 }
+
+
+/* .choices label:has(input:checked) {
+    background-color: #dae5d6;
+    color: white;
+    border: 2px solid #000000;
+} */
 
 .choices {
     display: flex;
@@ -150,40 +163,16 @@ footer {
     padding: 25px 5%;
     font-size: 11px;
     color: #786d5d;
-}
-
-/* Phone */
-@media (max-width: 600px) {
-    main > img {
-        width: 100%;
-        height: auto;
-    }
-}
-
-/* Tablet */
-@media (min-width: 601px) and (max-width: 1023px) {
-    main > img {
-        width: 45%;
-        height: auto;
-    }
-}
-
-/* Desktop */
-@media (min-width: 1024px) {
-    main > img {
-        width: 50%;
-        height: auto;
-    }
+    background-color: #FAF7F0;
 }
 
 
 
-/* Hide menu button on desktop */
+
 #menu-btn {
     display: none;
 }
 
-/* Phone */
 @media (max-width: 600px) {
 
     header {
@@ -244,5 +233,9 @@ footer {
     footer {
         gap: 15px;
         flex-wrap: wrap;
+    }
+    img {
+        width: 100%;
+        height: auto;
     }
 }

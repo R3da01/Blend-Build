@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BRUME Coffee</title>
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
+    <script src="app.js" defer ></script>
 
 </head>
 <body>
@@ -14,17 +14,7 @@
         Du grain à votre tasse. Un café qui vous ressemble.
     </div>
 
-    <!-- <header>
-        <h1>♨ BRUME</h1>
 
-        <nav>
-            <a href="#">L'atelier café</a>
-            <a href="#">Notre savoir-faire</a>
-            <a href="#">Besoin d'aide ?</a>
-        </nav>
-        
-
-    </header> -->
     <header>
     <h1>♨ BRUME</h1>
 
@@ -35,6 +25,8 @@
         <a href="#">Notre savoir-faire</a>
         <a href="#">Besoin d'aide ?</a>
     </nav>
+
+    
 </header>
 
     <main>
@@ -56,72 +48,75 @@
             <h3>01 La base</h3>
             <div class="choices">
                 <label>
-                    <input type="radio" name="base">
-                    Espresso
-                    <small>18,00 DH</small>
+                    <input type="radio" name="base" >
+                    <span>Espresso</span>
+                    <small></small>
                 </label>
 
                 <label>
                     <input type="radio" name="base">
-                    Filtre
-                    <small>16,00 DH</small>
+                    <span> Filtre </span>
+                    <small></small>
                 </label>
             </div>
 
             <h3>02 La taille</h3>
             <div class="choices">
                 <label>
-                    <input type="radio" name="size">
-                    S · 150 ml
-                    <small>Inclus</small>
+                    <input type="radio" name="size" >
+                    <span> S · 150 ml </span>
+                    <small></small>
                 </label>
 
                 <label>
-                    <input type="radio" name="size">
-                    M · 250 ml
-                    <small>+ 4,00 DH</small>
+                    <input type="radio" name="size" >
+                    <span> M · 250 ml </span>
+                    <small></small>
                 </label>
 
                 <label>
-                    <input type="radio" name="size">
-                    L · 350 ml
-                    <small>+ 8,00 DH</small>
+                    <input type="radio" name="size"     >
+                    <span> L · 350 ml </span>
+                    <small></small>
                 </label>
             </div>
 
             <h3>03 Le lait</h3>
             <div class="choices">
                 <label>
-                    <input type="radio" name="milk">
-                    Vache
-                    <small>Inclus</small>
+                    <input type="radio" name="milk"     >
+                    <span> Lait de vache </span>
+                    <small></small>
                 </label>
 
                 <label >
-                    <input type="radio" name="milk">
-                    Avoine
-                    <small>+ 4,00 DH</small>
+                    <input type="radio" name="milk" >
+                    <span> Lait d'avoine </span>
+                    <small></small>
                 </label>
 
-                <label>
-                    <input type="radio" name="milk">
-                    Amande
-                    <small>+ 5,00 DH</small>
+                <label >
+                    <input type="radio" name="milk"     >
+                    <span> Lait d'amande </span>
+                    <small></small>
                 </label>
+
+             
             </div>
 
+            
             <h3>04 La touche en plus</h3>
             <div class="choices">
                 <label>
-                    <input type="checkbox">
-                    Caramel
-                    <small>+ 3,00 DH</small>
+                    <input type="checkbox"  >
+                    <span> Vanille </span>
+                    <small></small>
                 </label>
 
                 <label>
-                    <input type="checkbox">
-                    Vanille
-                    <small>+ 3,00 DH</small>
+                    <input type="checkbox"  >
+                    <span> Caramel </span>
+                    <small></small>
                 </label>
             </div>
 
@@ -136,7 +131,7 @@
     <section class="bottom">
         <div>
             <p>Votre création · Café sur mesure</p>
-            <h2>29,00 DH</h2>
+            <h2 id="total-price">29,00 DH</h2>
         </div>
 
         <button>Ajouter au panier →</button>
