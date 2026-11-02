@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    background: #ddd5c7;
+}
+
+
+
+.top {
+    background-color: #394b32;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
+
+header {
+    background-color: #FAF7F0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px ;
+    border-bottom: 1px solid #ddd5c7;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #786d5d;
+    font-size: 14px;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 5%;
+    font-size: 11px;
+    color: #786d5d;
+    background-color: #FAF7F0;
+}
+main {
+    
+    display: flex;
+    justify-content:space-around ;
+}
+
+.shop{
+    padding: 20px;
+    background-color: #ddd5c7;
+}
+
+.payment{
+    border-radius: 30px;
+    padding: 20px;
+    background-color: #cfccc7;
+}
+.payment h2{
+    text-align: center;
+    color: rgb(2, 73, 2);
+}
+
+.form .label{
+    display: block;
+    color:#000000;
+
+
+}
+.form .input{
+
+    padding: 5px  80px;
+    border-color: #786d5d;
+    border-radius: 10px ;
+}
+
+button {
+    margin-left: 150px;
+    margin-top: 20px;
+    padding: 10px;
+    background: #394b32;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
